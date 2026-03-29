@@ -1,20 +1,44 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Agentic Real Estate Search Pro
 
-# Run and deploy your AI Studio app
+An enterprise-grade, AI-powered real estate sourcing engine designed to bypass major aggregators (Zillow, Realtor.com, etc.) and find off-market land, For Sale By Owner (FSBO) properties, and direct broker listings.
 
-This contains everything you need to run your app locally.
+## 🚀 Features
 
-View your app in AI Studio: https://ai.studio/apps/2131f928-be24-4cdc-8d09-21e83cfc5852
+- **Agentic Live Search:** Utilizes Google's Gemini 3.1 Pro model with live web search capabilities to scour the internet for hidden listings.
+- **Aggregator Bypass:** Strictly instructed to ignore major retail real estate platforms, focusing instead on independent brokerages, local classifieds, and county-specific sites.
+- **Minimalist Dark UI:** A premium, distraction-free interface built with React, Tailwind CSS, and Framer Motion.
+- **Markdown Results:** Cleanly formatted, highly readable results extracting Price, Size, Contact Info, and Source URLs.
 
-## Run Locally
+## 💼 Commercial Acquisition
 
-**Prerequisites:**  Node.js
+This project is currently available for exclusive acquisition or commercial licensing. 
 
+To make a deal, purchase the source code, or discuss enterprise integration, please contact:
+**📧 [artclassstudio11@gmail.com](mailto:artclassstudio11@gmail.com)**
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🛠 Tech Stack
+
+- **Frontend:** React 19, Vite, Tailwind CSS v4
+- **AI Engine:** `@google/genai` (Gemini 3.1 Pro Preview)
+- **Animations:** `motion/react`
+- **Icons:** `lucide-react`
+- **Markdown:** `react-markdown`
+
+## ⚙️ Setup Instructions
+
+1. Clone the repository.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file and add your Gemini API key:
+   ```env
+   GEMINI_API_KEY=your_api_key_here
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+---
+*Built for serious real estate investors and wholesalers.*

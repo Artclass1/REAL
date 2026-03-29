@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { AlertCircle, Loader2, ArrowRight } from 'lucide-react';
+import { AlertCircle, Loader2, ArrowRight, Mail, Building2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { GoogleGenAI } from '@google/genai';
 import ReactMarkdown from 'react-markdown';
@@ -63,16 +63,21 @@ Ensure you actually search the web and provide real links and contact info. Do n
   };
 
   return (
-    <div className="min-h-screen bg-black text-zinc-100 font-sans selection:bg-zinc-800">
-      <main className="max-w-3xl mx-auto px-6 py-24">
+    <div className="min-h-screen bg-black text-zinc-100 font-sans selection:bg-zinc-800 flex flex-col">
+      <main className="max-w-3xl mx-auto px-6 py-24 flex-grow w-full">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="space-y-8"
         >
           <div>
-            <h1 className="text-3xl font-light tracking-tight text-white mb-2">Agentic Real Estate Search</h1>
-            <p className="text-zinc-500 text-sm">Find off-market land, FSBOs, and direct broker listings.</p>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="bg-zinc-900 p-2.5 rounded-xl border border-zinc-800">
+                <Building2 className="w-6 h-6 text-zinc-100" />
+              </div>
+              <h1 className="text-3xl font-light tracking-tight text-white">Agentic Real Estate Search</h1>
+            </div>
+            <p className="text-zinc-500 text-sm">Find off-market land, FSBOs, and direct broker listings bypassing major aggregators.</p>
           </div>
 
           <div className="relative">
@@ -121,6 +126,19 @@ Ensure you actually search the web and provide real links and contact info. Do n
           </AnimatePresence>
         </motion.div>
       </main>
+
+      <footer className="border-t border-zinc-900 bg-black/50 backdrop-blur-sm py-8 mt-auto">
+        <div className="max-w-3xl mx-auto px-6 flex flex-col items-center justify-center text-center space-y-4">
+          <p className="text-zinc-500 text-xs tracking-widest uppercase font-medium">Enterprise Sourcing Engine</p>
+          <a 
+            href="mailto:artclassstudio11@gmail.com" 
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 hover:text-white hover:bg-zinc-800 transition-all text-sm"
+          >
+            <Mail className="w-4 h-4" />
+            Acquire this project: artclassstudio11@gmail.com
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
