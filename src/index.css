@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-black text-zinc-100;
+}
+
+.markdown-body h3 {
+  @apply text-xl font-medium mt-8 mb-4 text-white tracking-tight;
+}
+.markdown-body p {
+  @apply mb-4 text-zinc-400 leading-relaxed;
+}
+.markdown-body ul {
+  @apply list-disc pl-5 mb-6 text-zinc-400 space-y-2;
+}
+.markdown-body a {
+  @apply text-white hover:text-zinc-300 underline decoration-zinc-700 underline-offset-4 transition-colors;
+}
+.markdown-body strong {
+  @apply font-medium text-zinc-200;
+}
+.markdown-body hr {
+  @apply my-8 border-zinc-800;
+}

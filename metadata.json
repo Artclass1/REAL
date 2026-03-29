@@ -1,0 +1,5 @@
+{
+  "name": "Real Estate Deep Search Generator",
+  "description": "Generate advanced search prompts (Google Dorks, YouTube, Facebook queries) to find off-market land, FSBO properties, and direct broker contacts.",
+  "requestFramePermissions": []
+}
